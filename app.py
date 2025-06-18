@@ -146,7 +146,7 @@ async def get_embedding(text, max_retries=3):
         try:
             logger.info(f"Getting embedding for text (length: {len(text)})")
             # Call the embedding API through aipipe proxy
-            url = "https://aipipe.org/openai/v1/embeddings"
+            url = "https://aiproxy.sanand.workers.dev/openai/"
             headers = {
                 "Authorization": API_KEY,
                 "Content-Type": "application/json"
